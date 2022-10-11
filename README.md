@@ -73,7 +73,7 @@ Alternatively, you may start the frontend app by entering `npm start` into the t
 
 ## Login Information
 
-For demonstration purposes, any combination of username and password can be used to access the banking system.
+For demonstration purposes, any combination of username and password can be used to access the banking system. However, empty username and password fields are not allowed.
 
 ## API Documentation
 
@@ -101,12 +101,12 @@ POST /create/creditFacility
 
 ```javascript
 // Valid Request Response
-true;
+true
 ```
 
 ```javascript
 // Invalid Request Response
-false;
+false
 ```
 
 ### 2. Create Loan
@@ -135,12 +135,12 @@ POST /create/loan
 
 ```javascript
 // Valid Request Response
-true;
+true
 ```
 
 ```javascript
 // Invalid Request Response
-false;
+false
 ```
 
 ### 3. Get All Loans By Applicant
@@ -171,7 +171,7 @@ GET /get/loan/all/:applicantId
 
 ```javascript
 // Invalid Request Response
-null;
+null
 ```
 
 ### 4. Get All Applicants
@@ -197,7 +197,7 @@ GET /get/applicant/all
 
 ```javascript
 // Invalid Request Response
-null;
+null
 ```
 
 ### 5. Get List of Credit Facilities
@@ -227,7 +227,7 @@ GET /get/credit-facility/all
 
 ```javascript
 // Invalid Request Response
-null;
+null
 ```
 
 ## Explanations
