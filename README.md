@@ -26,6 +26,8 @@ The frontend app will run on `http://localhost:4200` and backend app on `http://
         - [Responses](#responses-2)
     4. [Get All Applicants](#4-get-all-applicants)
         - [Responses](#responses-3)
+    5. [Get List of Credit Facilities](#5-get-list-of-credit-facilities)
+        - [Responses](#responses-4)
 -   [Explanations](#explanations)
     -   [Cross-Origin Resource Sharing (CORS)](#cross-origin-resource-sharing-cors)
 
@@ -188,6 +190,36 @@ GET /get/applicant/all
         "nric": String,
         "firstName": String,
         "lastName": String
+    },
+    ...
+];
+```
+
+```javascript
+// Invalid Request Response
+null;
+```
+
+### 5. Get List of Credit Facilities
+
+```http request
+GET /get/credit-facility/all
+```
+
+#### Responses:
+
+```javascript
+// Valid Request Response
+[
+    {
+        "creditId": Integer,
+        "applicantId": Integer,
+        "applicant": {
+            "applicantId": Integer,
+            "nric": String,
+            "firstName": String,
+            "lastName": String
+        }
     },
     ...
 ];
