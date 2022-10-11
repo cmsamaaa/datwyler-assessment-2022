@@ -1,0 +1,47 @@
+<app-header></app-header>
+<app-language></app-language>
+
+<section class="container">
+  <div class="row justify-content-center text-center">
+    <div class="col-md-10 col-sm-12">
+      <div class="row mb-4">
+        <h2 class="text-uppercase title">{{'Credit Facilities' | translate}}</h2>
+      </div>
+      <div *ngIf='isCreated' class="row mb-4 justify-content-center">
+        <span class="text-success">{{'Success Message - Open New Credit Facility' | translate}}</span>
+      </div>
+      <div *ngIf='isCreatedError' class="row mb-4 justify-content-center">
+        <span class="text-danger">{{'Error Message - Open New Credit Facility' | translate}}</span>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <div class="row">
+            <table>
+              <thead>
+                <tr>
+                  <th>{{'Credit ID' | translate}}</th>
+                  <th>{{'Applicant ID' | translate}}</th>
+                  <th>{{'NRIC' | translate}}</th>
+                  <th>{{'First Name' | translate}}</th>
+                  <th>{{'Last Name' | translate}}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let creditFacility of creditFacilities">
+                  <td>{{creditFacility.creditId}}</td>
+                  <td>{{creditFacility.applicantId}}</td>
+                  <td>{{creditFacility.applicant.nric}}</td>
+                  <td>{{creditFacility.applicant.firstName}}</td>
+                  <td>{{creditFacility.applicant.lastName}}</td>
+                  <td>
+                    <a routerLink="/openLoan/{{creditFacility.applicantId}}/{{creditFacility.creditId}}" class="btn btn-black me-2">{{'Open' | translate}} {{'New' | translate}} {{'Loan' | translate}}</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

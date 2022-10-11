@@ -1,0 +1,10 @@
+.btn-black {
+  background-color: #212529 !important;
+  color: #fff;
+}
+
+.btn-black:hover,
+.btn-black:active {
+  background-color: #000 !important;
+  color: #fff;
+}

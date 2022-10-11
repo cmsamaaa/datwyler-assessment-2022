@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">Money Bank</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li *ngIf="authenticationService.isUserLoggedIn()" class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="/welcome" routerLinkActive="active">{{'Welcome' | translate}}</a>
+        </li>
+        <li *ngIf="authenticationService.isUserLoggedIn()" class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="/applicants" routerLinkActive="active">{{'View Applicants' | translate}}</a>
+        </li>
+        <li *ngIf="authenticationService.isUserLoggedIn()" class="nav-item">
+          <a class="nav-link" aria-current="page" routerLink="/creditFacilities" routerLinkActive="active">{{'Credit Facilities' | translate}}</a>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li *ngIf="!authenticationService.isUserLoggedIn()" class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/login" routerLinkActive="active">{{'Login' | translate}}</a>
+          </li>
+          <li *ngIf="authenticationService.isUserLoggedIn()" class="nav-item">
+            <a class="nav-link" aria-current="page" routerLink="/logout" routerLinkActive="active">{{'Logout' | translate}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

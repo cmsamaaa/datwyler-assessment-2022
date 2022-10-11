@@ -1,0 +1,28 @@
+<app-header></app-header>
+<app-language></app-language>
+
+<section class="container">
+  <div class="row justify-content-center ">
+    <div class="col-md-6 col-sm-12">
+      <div class="row mb-4">
+        <h2 class="text-uppercase title">{{'Login' | translate}}</h2>
+      </div>
+      <div class="row">
+        <form (submit)="handleLogin()">
+          <div class="form-group mb-2">
+            <label>{{'User ID' | translate}}</label>
+            <input [(ngModel)]="username" name="username" type="text" class="form-control" placeholder="{{'User ID' | translate}}">
+          </div>
+          <div class="form-group mb-2">
+            <label>{{'Password' | translate}}</label>
+            <input [(ngModel)]="password" name="password" type="password" class="form-control" placeholder="{{'Password' | translate}}">
+          </div>
+          <div>
+            <span *ngIf='invalidLogin' class="text-danger">{{'Invalid login' | translate}}</span>
+            <button type="submit" class="btn btn-black float-end">{{'Login' | translate}}</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

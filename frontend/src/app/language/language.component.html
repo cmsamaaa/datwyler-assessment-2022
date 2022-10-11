@@ -1,0 +1,10 @@
+<nav class="justify-content-end pe-5">
+  <div class="row">
+    <div class="col-md-1 offset-md-11 justify-content-end">
+      <select class="form-select" (change)="changeLang($any($event.target).value)">
+        <option value="en" [selected]="lang == 'en'">English</option>
+        <option value="ch" [selected]="lang == 'ch'">中文</option>
+      </select>
+    </div>
+  </div>
+</nav>
