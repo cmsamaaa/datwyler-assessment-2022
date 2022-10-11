@@ -28,8 +28,7 @@ The frontend app will run on `http://localhost:4200` and backend app on `http://
         - [Responses](#responses-3)
     5. [Get List of Credit Facilities](#5-get-list-of-credit-facilities)
         - [Responses](#responses-4)
--   [Explanations](#explanations)
-    -   [Cross-Origin Resource Sharing (CORS)](#cross-origin-resource-sharing-cors)
+-   [Cross-Origin Resource Sharing (CORS)](#cross-origin-resource-sharing-cors)
 
 ## Pre-requisites
 
@@ -230,9 +229,7 @@ GET /get/credit-facility/all
 null
 ```
 
-## Explanations
-
-### Cross-Origin Resource Sharing (CORS)
+## Cross-Origin Resource Sharing (CORS)
 
 Cross-origin resource sharing (CORS) is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served.
 
