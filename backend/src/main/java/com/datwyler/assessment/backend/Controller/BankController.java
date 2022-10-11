@@ -52,5 +52,13 @@ public class BankController {
 		
 		return applicant.RetrieveAllApplicants();
 	}
+	
+	// Get List of Credit Facilities
+	@GetMapping(path = "/get/credit-facility/all")
+	public List<CreditFacility> getAllCreditFacilities() {
+		CreditFacility creditFacility = new CreditFacility();
+		
+		return creditFacility.RetrieveCreditFacilities();
+	}
 
 }
