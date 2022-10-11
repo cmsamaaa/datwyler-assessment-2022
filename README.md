@@ -14,6 +14,7 @@ The frontend app will run on `http://localhost:4200` and backend app on `http://
     -   [Node.js](#nodejs)
     -   [Java JDK 17](#java-jdk-17)
 -   [Setup Guide (Local)](#setup-guide-local)
+-   [Login Information](#login-information)
 -   [API Documentation](#api-documentation)
     1. [Create Credit Facility](#1-create-credit-facility)
         - [Request Body](#request-body)
@@ -67,6 +68,10 @@ A batch script has been created for your convenience in starting up both the fro
 > **NOTE:** Amend the `JAVA_HOME` in this batch script to the Java JDK 17 directory on your device.
 
 Alternatively, you may start the frontend app by entering `npm start` into the terminal from `./frontend` folder, and entering `mvnw spring-boot:run` into the terminal from `./backend` folder.
+
+## Login Information
+
+For demonstration purposes, any combination of username and password can be used to access the banking system.
 
 ## API Documentation
 
