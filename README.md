@@ -6,6 +6,8 @@ This project is written in Node.js with TypeScript, using Angular.js framework f
 
 The frontend app will run on `http://localhost:4200` and backend app on `http://localhost:8080`. Please ensure that these two ports are free.
 
+> Instructions on how to log in the app can be found [here](#login-information).
+
 #### Author: Loh Chun Mun
 
 ## Table of Contents
